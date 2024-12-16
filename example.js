@@ -1,9 +1,7 @@
-
-
 setTimeout(() => {
 bsads.showVideo(()=>{
-    alert("success");
+    // add your logic to give reward
 },()=>{
-    alert("fail");
+    // add your logic to NOT give reward
 })
 }, 3000 );
