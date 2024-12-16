@@ -16,10 +16,10 @@
 ### 集成步骤
 
 1. **引入必要的脚本**
-   在需要展示激励视频广告的 HTML 文件中添加以下脚本：
+   在需要展示激励视频广告的 HTML 文件的<body>中添加以下脚本：
 
    ```html
-   <script src="path/to/gpt.js"></script>
+   <script src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
    <script src="path/to/bsads.js"></script>
    ```
 
