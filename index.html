@@ -25,6 +25,7 @@
   <meta name="x5-orientation" content="">
 
   <meta name="x5-page-mode" content="app">
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 <body>
   
@@ -35,6 +36,17 @@
 
   <script src="bsads.js"></script>
   <script src="example.js"></script>
+
+  <div id="content"></div>
+  <script>
+      fetch('README.md')
+          .then(response => response.text())
+          .then(md => {
+              document.getElementById('content').innerHTML = marked.parse(md);
+          });
+    </script>
+</body>
+</html>
 
 </body>
 </html>

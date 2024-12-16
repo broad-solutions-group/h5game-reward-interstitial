@@ -10,13 +10,13 @@
 ## 使用方法
 
 ### 前置条件
-1. 确保您已获得谷歌提供的 `gpt.js` 文件和 Bs 公司提供的 `bsads.js` 文件。
+1. 确保您已获得Bs 公司提供的 `bsads.js` 文件。
 2. 从谷歌广告管理平台申请您的广告单元 ID。
 
 ### 集成步骤
 
 1. **引入必要的脚本**
-   在需要展示激励视频广告的 HTML 文件的<body>中添加以下脚本：
+   在需要展示激励视频广告的 HTML 文件的\<body\>中添加以下脚本：
 
    ```html
    <script src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
