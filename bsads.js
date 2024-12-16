@@ -33,7 +33,7 @@ bsads.initReward = function () {
       if (bsads.rewardFail) {
         bsads.rewardFail();
       }
-      console.error("rewardedSlotClosed fail")
+      console.warn("rewardedSlotClosed fail")
     }
     if (bsads.rewardSlot) {
       googletag.destroySlots([bsads.rewardSlot]);
@@ -56,7 +56,7 @@ bsads.initReward = function () {
       if (bsads.rewardFail) {
         bsads.rewardFail();
       }
-      console.error("slotRenderEnded fail")
+      console.warn("slotRenderEnded fail")
     }
   });
 }
@@ -75,7 +75,6 @@ bsads.showVideo = function (success, fail) {
   bsads.rewardFail = fail;
   googletag.cmd.push(function () {
     bsads.rewardSlot = googletag.defineOutOfPageSlot(
-      // "/21880406607/ca-pub-4881399016139609-tag/01_test_getfreshgame.com_reward",
       "/22639388115/rewarded_web_example",
       googletag.enums.OutOfPageFormat.REWARDED
     )
@@ -95,23 +94,9 @@ bsads.showInter = function () {
     googletag.destroySlots([bsads.interSlot]);
     bsads.interSlot = null;
   }
-  // bsads.interSuccess = success;
-  // bsads.interFail = fail;
-  // googletag.cmd.push(function () {
-  //   bsads.interSlot = googletag.defineOutOfPageSlot(
-  //     "/21880406607/ca-pub-4881399016139609-tag/01_test_getfreshgame.com_inter",
-  //     // "/22639388115/rewarded_web_example",
-  //     googletag.enums.OutOfPageFormat.INTERSTITIAL
-  //   )
-  //   bsads.interSlot.addService(googletag.pubads());
-  //   googletag.enableServices();
-  //   googletag.display(bsads.rewardSlot);
-  // });
-
 
   googletag.cmd.push(function () {
     bsads.interSlot = googletag.defineOutOfPageSlot(
-      // '/21880406607/ca-pub-4881399016139609-tag/01_test_getfreshgame.com_inter',
       "/6355419/Travel/Europe/France/Paris",
       googletag.enums.OutOfPageFormat.INTERSTITIAL);
     
@@ -131,34 +116,7 @@ bsads.showInter = function () {
   });
 }
 
-// window.googletag = window.googletag || {cmd: []};
-// googletag.cmd.push(function() {
-// var slot = googletag.defineOutOfPageSlot('/21880406607/ca-pub-4881399016139609-tag/01_test_getfreshgame.com_inter',
-// googletag.enums.OutOfPageFormat.INTERSTITIAL);
-// // Slot returns null if the page or device does not support interstitials
-// if (slot)slot.addService(googletag.pubads());
-// googletag.enableServices();
-// // Consider delaying until first div on page
-// googletag.display(slot);
-// });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 window.bsads = bsads;
-
-export var bsads;
 
 
 

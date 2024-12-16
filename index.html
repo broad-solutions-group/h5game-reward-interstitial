@@ -3,40 +3,28 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Cocos Creator | dgwzq</title>
+  <title>BsAds</title>
 
-  <!--http://www.html5rocks.com/en/mobile/mobifying/-->
   <meta name="viewport"
         content="width=device-width,user-scalable=no,initial-scale=1, minimum-scale=1,maximum-scale=1"/>
 
-  <!--https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html-->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="format-detection" content="telephone=no">
 
-  <!-- force webkit on 360 -->
   <meta name="renderer" content="webkit"/>
   <meta name="force-rendering" content="webkit"/>
-  <!-- force edge on IE -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
   <meta name="msapplication-tap-highlight" content="no">
 
-  <!-- force full screen on some browser -->
   <meta name="full-screen" content="yes"/>
   <meta name="x5-fullscreen" content="true"/>
   <meta name="360-fullscreen" content="true"/>
   
-  <!-- force screen orientation on some browser -->
   <meta name="screen-orientation" content=""/>
   <meta name="x5-orientation" content="">
 
-  <!--fix fireball/issues/3568 -->
-  <!--<meta name="browsermode" content="application">-->
   <meta name="x5-page-mode" content="app">
-
-  <!--<link rel="apple-touch-icon" href=".png" />-->
-  <!--<link rel="apple-touch-icon-precomposed" href=".png" />-->
-
 </head>
 <body>
   
@@ -45,18 +33,8 @@
   src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"
 ></script>
 
-<script>
-  window.googletag = window.googletag || {cmd: []};
-  googletag.cmd.push(function() {
-  var slot = googletag.defineOutOfPageSlot(
-    // '/21880406607/ca-pub-4881399016139609-tag/01_test_getfreshgame.com_inter',
-    "/6355419/Travel/Europe/France/Paris",
-  googletag.enums.OutOfPageFormat.INTERSTITIAL);
-  if (slot)slot.addService(googletag.pubads());
-  googletag.enableServices();
-  googletag.display(slot);
-  });
-  </script>
+  <script src="bsads.js"></script>
+  <script src="example.js"></script>
 
 </body>
 </html>
