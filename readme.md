@@ -36,10 +36,10 @@
    ```javascript
    bsads.showVideo(
        ()=> {
-           console.log("广告播放成功。");
+            // add your logic to give reward
        },
        ()=> {
-           console.log("广告加载或播放失败。");
+            // add your logic to NOT give reward
        }
    );
    ```
