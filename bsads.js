@@ -12,6 +12,8 @@ bsads.rewardPayLoad = null;
 bsads.getRewardFlag = false;
 bsads.initRewardFlag = false;
 
+bsads.adUnitId = "/22639388115/rewarded_web_example";
+
 bsads.initReward = function () {
   googletag.pubads().enableSingleRequest();
 
@@ -75,7 +77,7 @@ bsads.showVideo = function (success, fail) {
   bsads.rewardFail = fail;
   googletag.cmd.push(function () {
     bsads.rewardSlot = googletag.defineOutOfPageSlot(
-      "/22639388115/rewarded_web_example",
+      bsads.adUnitId,
       googletag.enums.OutOfPageFormat.REWARDED
     )
     bsads.rewardSlot.addService(googletag.pubads());
@@ -97,7 +99,7 @@ bsads.showInter = function () {
 
   googletag.cmd.push(function () {
     bsads.interSlot = googletag.defineOutOfPageSlot(
-      "/6355419/Travel/Europe/France/Paris",
+      bsads.adUnitId,
       googletag.enums.OutOfPageFormat.INTERSTITIAL);
     
     if ( bsads.interSlot) 

@@ -34,14 +34,14 @@
    在相应的广告请求页面调用 `bsads.showVideo` 方法来拉取并展示激励视频广告，同时传入 `success` 和 `fail` 两个回调函数以处理广告播放结果：
 
    ```javascript
-   bsads.showVideo({
-       success: function() {
+   bsads.showVideo(
+       ()=> {
            console.log("广告播放成功。");
        },
-       fail: function() {
+       ()=> {
            console.log("广告加载或播放失败。");
        }
-   });
+   );
    ```
 
 4. **本地运行 Demo**
