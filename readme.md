@@ -11,7 +11,7 @@
 
 ### 前置条件
 1. 确保您已获得Bs 公司提供的 `bsads.js` 文件。
-2. 从谷歌广告管理平台申请您的广告单元 ID。
+2. 请向我们运营申请广告单元id。
 
 ### 集成步骤
 
@@ -25,6 +25,13 @@
 
 2. **设置广告单元 ID**
    `bsads.js` 中的广告单元 ID 仅供测试使用，请替换为您申请的广告单元 ID：
+   请将 `bsads.js`中的 
+
+   ```javascript
+   bsads.adUnitId = "/22639388115/rewarded_web_example";
+   ```
+
+   替换为
 
    ```javascript
    bsads.adUnitId = "your-ad-unit-id";
@@ -46,6 +53,10 @@
 
 4. **本地运行 Demo**
    将项目部署到本地，并通过 Web 代理访问 Demo 页面。
+
+   web代理方式：
+    下载安装VSCode软件后，通过VSCode打开index.html文件所在的文件夹，点击左侧栏中的扩展(extension),搜索框输入 Live Server 安装后
+    右下角会出现一个Go Live的按钮 点击后即可查看demo
 
 ## 示例
 详细用法请参考仓库中的 `example.js` 文件。
